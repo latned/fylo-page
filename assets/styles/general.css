@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway/Raleway-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+:root {
+  --bg-lgray: #f8f8fe;
+  --footer-bg: hsl(243, 87%, 12%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header, h1, h2, h3, button {
+  font-family: Raleway;
+}
+
+h1, h2, h3, p, a {
+  color: hsl(243, 87%, 12%);
+}
+
+h1, h2, h3 {
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+p {
+  font-family: OpenSans;
+  line-height: 1.5;
+}
+a {
+  font-family: OpenSans;
+  text-decoration: none;
+}
+
+.txt-wht-clr {
+  color: hsl(240, 75%, 98%);
+}
+
+.service__btn {
+  background: hsl(224, 93%, 58%);
+  border: none;
+  color: #fff;
+  max-width: 320px;
+  height: 40px;
+  width: 90%;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 13.5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #cbcbcb;
+  transition: opacity .25s  
+}
+
+.service__btn:hover {
+  opacity: .75;
+}
+
+@media (width > 1205px) {
+  .service__btn {
+    max-width: 200px;
+  }
+}
+
+.logo {
+  cursor: pointer;
+}

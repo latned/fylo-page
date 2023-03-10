@@ -1,0 +1,279 @@
+@media (width < 800px) {
+  main {
+    text-align: center;
+  }
+}
+
+.service {
+  padding: 1rem;
+  display: grid;
+  gap: 3rem;
+  padding-bottom: 5rem;
+}
+
+.service__email-input {
+  width: 90%;
+  border: 1px solid hsl(238, 22%, 44%);
+  border-radius: 4px;
+  height: 40px;
+  margin-bottom: 1rem;
+  text-indent: 1rem;
+  max-width: 320px;
+}
+
+.service__email-input::placeholder {
+  font-family: Raleway;
+  opacity: .8;
+  color: hsl(0, 0%, 75%);
+}
+
+@media (width > 800px) {
+  .service__email-input {
+    margin-right: .5rem;
+  }
+}
+
+.service--bg-lgray {
+  background: var(--bg-lgray);
+  gap: 5rem;
+}
+
+.bfr-img {
+  margin-bottom: -10px;
+}
+
+.bfr-bg {
+  background: url('../images/bg-curve-mobile.svg') no-repeat center;
+  width: 100%;
+  height: 50px;
+}
+
+@media (width > 376px) {
+  .bfr-bg {
+    background: url('../images/bg-curve-desktop.svg') no-repeat center;
+    height: 110px;
+  }
+}
+
+@media (width > 1440px) {
+  .bfr-bg {
+    background: none;
+    height: 110px;
+  }
+}
+
+.check-size {
+  max-width: 500px;
+}
+
+@media (width > 800px) {
+  .check-size {
+    grid-column: 2;
+  }
+
+  .service__info-container {
+    grid-template-rows: min-content min-content min-content;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.service__img {
+  width: 100%;
+}
+
+.service--bg-blue {
+  background: hsl(238, 22%, 44%);
+  padding: 3.5rem 1.6rem 5rem;
+}
+
+@media (width > 800px) {
+  .service {
+    padding: calc(1.5rem + 2%) calc(1rem + 2.5%) 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service--mrg-btm {
+    padding-bottom: 10rem;
+  }
+
+  .service--bg-blue {
+    padding: calc(3rem + 2%) calc(1rem + 2.5%) 3rem;
+  }
+}
+
+.service__info-container {
+  line-height: 1.4;
+  display: grid;
+  gap: 2rem;
+}
+
+.service__title--fnt-big {
+  font-size: 26px;
+}
+
+.service__title--fnt-sml {
+  font-size: 17px;
+}
+
+@media (width > 800px) {
+  .service__title {
+    max-width: 525px;
+    font-size: 2rem;
+  }
+
+  .service__body {
+    max-width: 510px;
+  }
+
+  .service__title--less2rem {
+    font-size: 30px;
+  }
+}
+
+.service__body-container {
+  display: grid;
+  gap: 1rem;
+  text-align: start;
+}
+
+@media (width < 800px) {
+  .font-gray {
+    color: hsl(238, 22%, 44%);
+    font-size: 15px;
+  }
+}
+
+.service__link-container {
+  align-items: end;
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  padding-bottom: 5px;
+  margin-bottom: 2rem;
+  max-width: 151px;
+  cursor: pointer;
+}
+
+.service__link-container:hover {
+  border-bottom: 1px solid #75e7ce;
+}
+
+@media (width < 800px) {
+  .service__link-container {
+    justify-self: center;
+    margin-bottom: .5rem;
+  }
+}
+
+.service__link {
+  color: hsl(170, 45%, 43%);
+  font-size: 14px;
+}
+
+.service__link-img {
+  cursor: pointer;
+  width: 17px;
+}
+
+.service__link-container:hover * {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(19%) saturate(954%) hue-rotate(99deg) brightness(96%) contrast(88%);
+}
+
+.service__testimonial {
+  text-align: start;
+  box-shadow: 0 0 10px #e3e3e3;
+  border-radius: 8px;
+  padding: 1.7rem;
+  display: grid;
+  gap: 1rem;
+  margin: 0 1.9rem;
+  max-width: 330px;
+}
+
+@media (width > 800px) {
+  .service__testimonial {
+    margin: 0;
+  }
+}
+
+.testimonial__body {
+  font-family: Raleway;
+  font-size: 10px;
+}
+
+.testimonial__img {
+  width: 30px;
+  border-radius: 16px;
+}
+
+.testimonial__person-container {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.testimonial__person-info {
+  display: grid;
+}
+
+.testimonial__name {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.testimonial__job {
+  font-size: 8px;
+}
+
+@media (width > 800px) {
+  .testimonial__body {
+    font-size: 13px;
+  }
+
+  .testimonial__img {
+    width: 32px;
+  }
+
+  .testimonial__name {
+    font-size: 11px;
+  }
+
+  .testimonial__job {
+    font-size: 9px;
+  }
+}
+
+@media (width > 1440px) {
+	.service__input-container {
+	  display: grid;
+	  grid-template-rows: min-content;
+	}
+}
+
+.service__email-input--bottom {
+  border-radius: 3px;
+  margin-bottom: .75rem;
+}
+
+@media (width > 1205px) {
+  .service__email-input--bottom {
+    max-width: 450px;
+  }
+}
+
+.service__btn--bottom {
+  box-shadow: 1px 1px 3px #464781;
+  border-radius: 2px;
+  transition: opacity .25s
+}
+
+.service__btn--bottom:hover {
+  opacity: .75;
+}
+
+@media (width > 800px) {
+  .service__info-container {
+    gap: 1.25rem;
+  }
+}
