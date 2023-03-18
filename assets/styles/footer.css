@@ -11,6 +11,12 @@ footer {
   }
 }
 
+@media (width < 800px) {
+  footer {
+    place-items: center;
+  }
+}
+
 .logo-container__footer-logo {
   filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(805%) hue-rotate(205deg) brightness(120%) contrast(100%);
   width: 175px;

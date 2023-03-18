@@ -171,13 +171,12 @@
   font-size: 14px;
 }
 
-.service__link-img {
-  cursor: pointer;
-  width: 17px;
+.service__link-container:hover a {
+  color: #54c9b4;
 }
 
-.service__link-container:hover * {
-  filter: brightness(0) saturate(100%) invert(91%) sepia(19%) saturate(954%) hue-rotate(99deg) brightness(96%) contrast(88%);
+.service__link-container:hover svg use {
+  fill: #54c9b4;
 }
 
 .service__testimonial {
@@ -187,13 +186,14 @@
   padding: 1.7rem;
   display: grid;
   gap: 1rem;
-  margin: 0 1.9rem;
   max-width: 330px;
+  margin: 0;
 }
 
-@media (width > 800px) {
+@media (width < 800px) {
   .service__testimonial {
-    margin: 0;
+    margin: 0 1.9rem;
+    justify-self: center;
   }
 }
 
